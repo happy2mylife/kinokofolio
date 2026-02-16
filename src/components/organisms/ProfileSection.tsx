@@ -42,7 +42,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ careerData, qualificati
           <div className="relative order-2 md:order-1">
             <div className="aspect-square rounded-full overflow-hidden border-8 border-slate-100 shadow-2xl max-w-sm mx-auto bg-slate-200 relative">
               <img
-                src="/images/prof1.jpg"
+                src={`${import.meta.env.BASE_URL}images/prof1.jpg`}
                 alt="Kinoko Profile"
                 className="w-full h-full object-cover"
               />

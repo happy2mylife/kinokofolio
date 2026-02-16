@@ -279,50 +279,50 @@ export const careerData: Record<string, CareerTab> = {
       {
         title: "2015",
         details: [
-          { text: "SPAJAM（東京予選入賞）" },
-          { text: "禅Hack" },
-          { text: "Music Hack Day Tokyo（ローランド賞）" },
-          { text: "超特大ペッパソン（Pepper賞）" }
+          { text: "SPAJAM（東京予選入賞）", link: "https://mashandroom.org/report/205/" },
+          { text: "禅Hack", link: "https://mashandroom.org/report/214/" },
+          { text: "Music Hack Day Tokyo（ローランド賞）", link: "https://mashandroom.org/report/219/" },
+          { text: "超特大ペッパソン（Pepper賞）", link: "https://mashandroom.org/report/230/" }
         ]
       },
       {
         title: "2016",
         details: [
-          { text: "Webと車のハッカソン" },
-          { text: "Yahoo Hack Day" },
-          { text: "Space Apps Challenge" },
-          { text: "MIZUHO.HACK（Pepper賞）" },
-          { text: "NTTドコモｘTBS TVHACKDAY（myThings賞）" },
-          { text: "Facebook Messenger ハッカソン（IBM賞）" },
-          { text: "特大ペッパソン" }
+          { text: "Webと車のハッカソン", link: "https://mashandroom.org/report/246/" },
+          { text: "Yahoo Hack Day", link: "https://mashandroom.org/report/256/" },
+          { text: "Space Apps Challenge", link: "https://mashandroom.org/report/261/" },
+          { text: "MIZUHO.HACK（Pepper賞）", link: "https://mashandroom.org/report/272/" },
+          { text: "NTTドコモｘTBS TVHACKDAY（myThings賞）", link: "https://mashandroom.org/report/282/" },
+          { text: "Facebook Messenger ハッカソン（IBM賞）", link: "https://mashandroom.org/report/285/" },
+          { text: "特大ペッパソン", link: "https://mashandroom.org/report/288/" }
         ]
       },
       {
         title: "2017",
         details: [
-          { text: "Space Apps Challenge（ヤフー賞）" },
-          { text: "ペッパソン東の陣（SONY賞）" },
-          { text: "ハママチューン（グランプリ）" }
+          { text: "Space Apps Challenge（ヤフー賞）", link: "https://mashandroom.org/report/336/" },
+          { text: "ペッパソン東の陣（SONY賞）", link: "https://mashandroom.org/report/681/" },
+          { text: "ハママチューン（グランプリ）", link: "https://mashandroom.org/report/897/" }
         ]
       },
       {
         title: "2018",
         details: [
-          { text: "SPAJAM" },
-          { text: "RIZAPｘベルマーレハッカソン（最優秀賞）" },
-          { text: "LINE BOOT AWARDSハッカソン" }
+          { text: "SPAJAM", link: "https://mashandroom.org/report/1135/" },
+          { text: "RIZAPｘベルマーレハッカソン（最優秀賞）", link: "https://mashandroom.org/report/1306/" },
+          { text: "LINE BOOT AWARDSハッカソン", link: "https://mashandroom.org/report/1349/" }
         ]
       },
       {
         title: "2019",
         details: [
-          { text: "Alexaスキルアワードハッカソン 東京" }
+          { text: "Alexaスキルアワードハッカソン 東京", link: "https://mashandroom.org/report/1832/" }
         ]
       },
       {
         title: "2023",
         details: [
-          { text: "SPAJAM" }
+          { text: "SPAJAM", link: "https://mashandroom.org/report/4235/" }
         ]
       }
     ]
