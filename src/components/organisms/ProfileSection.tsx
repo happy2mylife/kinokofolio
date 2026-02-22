@@ -60,6 +60,10 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ careerData, qualificati
                 仕事以外で、<span className="font-bold text-orange-500">「キノコ活動」</span>に勤しむ日々。
                 色々なご縁と使命感から、教育関係にも積極的に関わっています。
               </p>
+              <p>
+                <a href="https://mashandroom.org" className="font-bold text-orange-500">「マッシュ＆ルーム」</a>
+                ちょっとのITとICTで、ちょっとの笑顔とワクワクをお届け！をモットーに活動する団体です。お気軽にご連絡ください！
+              </p>
               <p className="text-base bg-slate-50 p-4 rounded-xl border border-slate-100 shadow-sm">
                 <span className="block font-bold text-slate-800 mb-1">🤝 連携のお誘い</span>
                 アカデミック関係の皆様とも何か<br className="md:hidden" />

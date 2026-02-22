@@ -18,8 +18,8 @@ const WorksSection: React.FC<WorksSectionProps> = ({ selectedWorks, kinokoConten
           <div>
             <div className="flex items-end justify-between mb-16">
               <SectionTitle
-                title="Selected Works"
-                subtitle="最近の取り組みの一部をご紹介します。"
+                title="マッシュ＆ルーム"
+                subtitle="創造せよ！頭にキノコが生えるまで"
                 align="left"
               />
             </div>
@@ -38,7 +38,7 @@ const WorksSection: React.FC<WorksSectionProps> = ({ selectedWorks, kinokoConten
 
         {/* Kinoko Contents */}
         {kinokoContents.length > 0 && (
-          <div>
+          <div id="kinoko">
             <div className="flex items-end justify-between mb-16">
               <SectionTitle
                 title="Kinoko Contents"

@@ -18,8 +18,13 @@ export const socialLinks: SocialLinkData[] = [
   },
   {
     icon: <Facebook size={24} />,
-    href: "https://www.facebook.com/mashandroom",
+    href: "https://www.facebook.com/happy.happy.children/",
     label: "Facebook"
+  },
+  {
+    icon: <span className="text-2xl font-bold" style={{ color: '#06C755' }}>L</span>,
+    href: "https://lin.ee/RjpJefL",
+    label: "LINE"
   },
   {
     icon: <span className="text-2xl font-bold">Q</span>,
@@ -44,22 +49,14 @@ export const selectedWorks: Project[] = [
   // TODO: Add selected works here
   {
     id: 1,
-    title: "ティーチャソン",
-    category: "Workshop / Community",
-    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800",
-    description: "「先生の一歩を子どもたちの百歩に」。先生方がオンラインツールのホスト体験等をワイワイ学ぶコミュニティ。",
-    tags: ["Education", "Workshop", "Teachers"],
-    link: "https://mashandroom.org/report/3280/"
-  },
-  {
-    id: 2,
     title: "マッシュ＆ルーム",
     category: "Organization",
-    image: "https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?auto=format&fit=crop&q=80&w=800",
+    image: `${import.meta.env.BASE_URL}images/mashandroom.jpg`,
     description: "「ちょっとのITとICTで笑顔を」をモットーに活動する任意団体。一億総キノコを目指して。",
     tags: ["Non-profit", "Social", "IT Support"],
     link: "https://mashandroom.org"
-  }];
+  },
+];
 
 // Kinoko Contents - キノコなコンテンツ
 export const kinokoContents: Project[] = [
@@ -67,7 +64,7 @@ export const kinokoContents: Project[] = [
     id: 1,
     title: "デジタルえほん「えぽん」",
     category: "Mobile App / Education",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800",
+    image: `${import.meta.env.BASE_URL}images/epon.jpg`,
     description: "音読することで絵が動いたり音が鳴ったりするデジタル絵本アプリ。第14回キッズデザイン賞受賞。",
     tags: ["App", "Kids Design", "Interactive"],
     link: "https://mashandroom.org/epon-meguri/"
@@ -76,7 +73,7 @@ export const kinokoContents: Project[] = [
     id: 2,
     title: "キノコラリー",
     category: "Regional / Web App / Digital Stamp Rally",
-    image: "https://images.unsplash.com/photo-1476973422084-e0fa66ff9456?auto=format&fit=crop&q=80&w=800",
+    image: `${import.meta.env.BASE_URL}images/kinoko_rally.png`,
     description: "「リアル冒険 × デジタルスタンプラリー」。地域や町内会を巡る冒険型学習イベント。",
     tags: ["Gamification", "Regional", "Web App"],
     link: "https://mashandroom.org/kinoko-rally/"
@@ -85,7 +82,7 @@ export const kinokoContents: Project[] = [
     id: 3,
     title: "キノコクエスト",
     category: "Event / Online Quest",
-    image: "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&q=80&w=800",
+    image: `${import.meta.env.BASE_URL}images/kinoko_quest.png`,
     description: "リアル地域が舞台のオンラインクエスト。子供たちが楽しみながら地域やイベントを学べる企画。",
     tags: ["Online Event", "Community", "Quest"],
     link: "https://mashandroom.org/kinoko-quest/"
@@ -94,7 +91,7 @@ export const kinokoContents: Project[] = [
     id: 4,
     title: "キノコリフレクション",
     category: "Projection Mapping / Art / Event",
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800",
+    image: `${import.meta.env.BASE_URL}images/kinoko_reflection.png`,
     description: "心のリフレクション（投影）を表現するプロジェクションマッピング・インスタレーション。",
     tags: ["Projection Mapping", "Art", "Event"],
     link: "https://mashandroom.org/kinoko-reflection/"
@@ -103,11 +100,29 @@ export const kinokoContents: Project[] = [
     id: 5,
     title: "キノコの館",
     category: "Media Art",
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800",
+    image: `${import.meta.env.BASE_URL}images/kinoko_castle.jpg`,
     description: "世界観に没入する体験型アドベンチャー。テーマに沿った形で館を設置し、クイズやミッションなどを体験できる館。",
     tags: ["Projection Mapping", "Art", "Event"],
     link: "https://mashandroom.org/kinoko-castle/"
   },
+  {
+    id: 6,
+    title: "七夕Pepper（Pepper Braille）",
+    category: "Accessibility / Robot / Education",
+    image: `${import.meta.env.BASE_URL}images/tanabata_pepper.jpg`,
+    description: "視覚障がいのある子どもたちが、点字入力デバイスを使ってPepper（織姫・彦星）とコミュニケーションし、願い事を届けるプロジェクト。",
+    tags: ["Robot", "Accessibility", "Education"],
+    link: "https://note.com/mashandroom/n/nd921f89fa0b3"
+  },
+  {
+    id: 7,
+    title: "キノコ式！",
+    category: "Education",
+    image: `${import.meta.env.BASE_URL}images/kinoko-style.png`,
+    description: "「先生の一歩を子どもたちの百歩に」。ゆったりまったりのんびり。誰も置いて行かないキノコ式！",
+    tags: ["Education", "Workshop", "Teachers"],
+    link: "https://mashandroom.org/kinoko-style/"
+  }
 
 ];
 
@@ -190,6 +205,18 @@ export const mediaData: MediaCategory[] = [
         title: "LINE Developer Community",
         desc: "たった30分でできる！サンタから毎日メッセージが届くLINE Botを作るチャレンジ",
         link: "https://www.youtube.com/live/rz5lw8pAGDI"
+      },
+      {
+        tag: "YouTube",
+        title: "【大阪・関西万国博覧会】ミライキッズラボ Day2",
+        desc: "2025年8月1日、大阪・関西万博にて開催された「ミライキッズラボ」に登壇。",
+        link: "https://www.youtube.com/live/w4PURqws7kM?si=flD5wNHetzQstY4-&t=10784"
+      },
+      {
+        tag: "Article",
+        title: "ソフトバンクニュース「春休みPepperすごろくトライアル」",
+        desc: "キノコ先生として出演。Pepperとmicro:bitを使ったプログラミングワークショップ。",
+        link: "https://www.softbank.jp/sbnews/entry/20190405_01"
       }
     ]
   }
@@ -404,7 +431,7 @@ export const activities: QualificationGroup[] = [
     category: "Social Activities",
     icon: <Sparkles size={24} className="text-purple-500" />,
     items: [
-      { name: "任意団体マッシュ＆ルーム代表", link: "https://mashandroom.org/" },
+      { name: "任意団体マッシュ＆ルーム代表 ('15〜)", link: "https://mashandroom.org/" },
       { name: "SDGs de 地方創生公認ファシリテーター", link: "https://sdgslocal.jp/facilitator/#murasekinoko" },
       { name: "Softbank Robotics公認Pepperコミュニティリーダー ('19〜'22)", link: "https://www.softbankrobotics.com/jp/news/info/20240524a/" },
       { name: "Softbank Robotics公認Pepperアンバサダー ('22〜)", link: "https://www.softbankrobotics.com/jp/news/info/20240524a/" },
@@ -413,8 +440,6 @@ export const activities: QualificationGroup[] = [
       { name: "CoderDojo武蔵小杉 運営/共同チャンピオン (〜'23)" },
       { name: "micro:bit champion ('25〜)", link: "https://note.com/microbitchampsjp/n/n8e9a01305023" },
       { name: "香川大学客員研究員 ('25〜)「キノコラリーなどを活用したゲーミフィケーションを用いた情報リテラシー教育支援、アセスメント」", link: "https://researchmap.jp/kinoko" },
-      { name: "CiNii: バーチャル空間を利用した他地域遠隔交流による学習活動実践報告 — 教育版マインクラフトマルチプレイによる発達障害のある不登校児童支援", link: "https://cir.nii.ac.jp/crid/1520296918635445376" },
-      { name: "CiNii:「OSS の品質管理」に対する市民共創方法 — データ可視化プラットホーム E2D3 の事例紹介", link: "https://cir.nii.ac.jp/crid/1390570699999459840" }
     ]
   },
   {

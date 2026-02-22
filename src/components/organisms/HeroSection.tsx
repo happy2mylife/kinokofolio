@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
             onClick={() => document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' })}
             icon={<ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />}
           >
-            View Works
+            View Kinoko
           </Button>
           <Button
             variant="secondary"

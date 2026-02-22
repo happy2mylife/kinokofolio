@@ -1,14 +1,15 @@
 import React from 'react';
-import { Github, Twitter, Mail, ShieldQuestion } from 'lucide-react';
+import { Github, Twitter, Mail, ShieldQuestion, Facebook } from 'lucide-react';
 import SocialLink from '../molecules/SocialLink';
 
 const ContactSection: React.FC = () => {
   return (
     <section id="contact" className="py-24 px-6 bg-slate-900 text-white text-center">
       <div className="max-w-3xl mx-auto space-y-10">
-        <h2 className="text-4xl md:text-5xl font-bold">Let's work together.</h2>
+        <h2 className="text-4xl md:text-5xl font-bold">Let's 一億総キノコ</h2>
         <p className="text-slate-400 text-xl">
-          キャリア教育、ICT活用、キノコ活動...<br />
+          キノコになりませんか？<br />
+          キャリア教育、ICT活用、アイデア出し、キノコ活動...<br />
           どんなことでもお気軽にご連絡ください。
         </p>
 
@@ -21,6 +22,8 @@ const ContactSection: React.FC = () => {
         <div className="flex flex-wrap gap-8 justify-center border-t border-slate-800 pt-10">
           <SocialLink href="https://github.com/happy2mylife" icon={<Github size={24} />} title="GitHub" />
           <SocialLink href="https://twitter.com/h2m_kinoko" icon={<Twitter size={24} />} title="Twitter" />
+          <SocialLink href="https://www.facebook.com/happy.happy.children/" icon={<Facebook size={24} />} title="Facebook" />
+          <SocialLink href="https://lin.ee/RjpJefL" icon={<span className="text-xl font-bold" style={{ color: '#06C755' }}>L</span>} title="LINE" />
           <SocialLink href="https://qiita.com/h2m_kinoko" icon="Q" title="Qiita" />
           <SocialLink href="https://note.com/mashandroom" icon="N" title="Note" />
           <SocialLink href="https://8card.net/virtual_cards/kDI3_qr5XPcxOj1JdnGKKQ_30247218107" icon="8" title="Eight (Business Card)" />

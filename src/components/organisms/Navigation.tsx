@@ -8,11 +8,16 @@ interface NavigationProps {
 }
 
 const Navigation: React.FC<NavigationProps> = ({ activeSection, scrollY, onSectionChange }) => {
-  const sections = ['home', 'works', 'media', 'profile', 'contact'];
+  const sections = ['home', 'kinoko', 'media', 'profile', 'contact'];
+
+  const scrollTargetMap: Record<string, string> = {
+    kinoko: 'works',
+  };
 
   const handleSectionClick = (section: string) => {
     onSectionChange(section);
-    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+    const targetId = scrollTargetMap[section] ?? section;
+    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://happy2mylife.github.io/kinokofolio",
+  "homepage": "https://kinokoapps.site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
