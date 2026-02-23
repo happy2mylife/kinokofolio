@@ -13,8 +13,8 @@ const MediaSection: React.FC<MediaSectionProps> = ({ mediaData }) => {
     <section id="media" className="py-24 px-6 bg-[#FDFBF7]">
       <div className="max-w-6xl mx-auto">
         <SectionTitle
-          title="Publications & Media"
-          subtitle="論文、書籍寄稿、メディア出演、LTなど。"
+          title="Publications & Kinoko Media Exposure"
+          subtitle="キノコ的な論文、キノコ風の書籍寄稿、キノコ味のメディア出演・LTをご紹介"
           className="mb-16"
         />
 

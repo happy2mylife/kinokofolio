@@ -32,6 +32,11 @@ export const socialLinks: SocialLinkData[] = [
     label: "Qiita"
   },
   {
+    icon: <span className="text-2xl">▶</span>,
+    href: "https://www.youtube.com/@mashandroom",
+    label: "YouTube"
+  },
+  {
     icon: <Linkedin size={24} />,
     href: "https://www.linkedin.com/in/happy-happy-children/",
     label: "LinkedIn"
@@ -217,6 +222,12 @@ export const mediaData: MediaCategory[] = [
         title: "ソフトバンクニュース「春休みPepperすごろくトライアル」",
         desc: "キノコ先生として出演。Pepperとmicro:bitを使ったプログラミングワークショップ。",
         link: "https://www.softbank.jp/sbnews/entry/20190405_01"
+      },
+      {
+        tag: "YouTube",
+        title: "KINOKO QUEST ライブ",
+        desc: "キノコクエスト - 荏原第五お家で地域くえすと",
+        link: "https://www.youtube.com/live/WMGSqWOc2Mg"
       }
     ]
   }
