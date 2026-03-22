@@ -15,6 +15,7 @@ export interface MediaItemData {
   title: string;
   desc: string;
   link?: string;
+  year?: number | string;
 }
 
 export interface MediaCategory {

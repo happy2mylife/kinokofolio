@@ -11,9 +11,14 @@ const MediaItem: React.FC<MediaItemProps> = ({ item }) => {
   return (
     <div className="group relative pl-6 border-l-2 border-slate-100 hover:border-orange-300 transition-colors">
       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-200 border-2 border-white group-hover:bg-orange-400 transition-colors"></div>
-      <Badge variant="default" className="mb-2">
-        {item.tag}
-      </Badge>
+      <div className="flex items-center gap-2 mb-2">
+        <Badge variant="default">
+          {item.tag}
+        </Badge>
+        {item.year && (
+          <span className="text-xs text-slate-400 font-medium">{item.year}</span>
+        )}
+      </div>
       <h4 className="text-lg font-bold text-slate-900 leading-snug mb-1">
         {item.link ? (
           <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-colors flex items-center gap-1">

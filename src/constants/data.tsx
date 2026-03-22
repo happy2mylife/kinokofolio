@@ -142,27 +142,53 @@ export const mediaData: MediaCategory[] = [
     items: [
       {
         tag: "CiNii",
-        title: "バーチャル空間を利用した他地域遠隔交流による学習活動実践報告",
-        desc: "教育版マインクラフトマルチプレイによる発達障害のある不登校児童支援",
-        link: "https://cir.nii.ac.jp/crid/1520296918635445376"
+        title: "「OSS の品質管理」に対する市民共創方法",
+        desc: "データ可視化プラットホーム E2D3 の事例紹介",
+        link: "https://cir.nii.ac.jp/crid/1390570699999459840",
+        year: 2019
+
       },
       {
         tag: "CiNii",
-        title: "「OSS の品質管理」に対する市民共創方法",
-        desc: "データ可視化プラットホーム E2D3 の事例紹介",
-        link: "https://cir.nii.ac.jp/crid/1390570699999459840"
-      },
-      {
-        tag: "論文",
-        title: "ゲーミフィケーションによる児童の情報モラル・リテラシー教育支援の提案",
-        desc: "ゲーム学会「ゲームと健康科学」研究部会 / 下條公寛, 村瀬真琴, 後藤田中",
-        link: "https://www.eng.kagawa-u.ac.jp/~hayashi/gas/GAS_Research_Report_2025.pdf"
+        title: "バーチャル空間を利用した他地域遠隔交流による学習活動実践報告",
+        desc: "教育版マインクラフトマルチプレイによる発達障害のある不登校児童支援",
+        link: "https://cir.nii.ac.jp/crid/1520296918635445376",
+        year: 2022
       },
       {
         tag: "書籍",
         title: "ＬＤ，ＡＤＨＤ＆ＡＳＤ 2022年 10月号 (ＧＩＧＡスクール　多様性に応じた個別最適な学び)",
         desc: "寄稿「大人の一歩を子どもたちの百歩に」",
-        link: "https://www.amazon.co.jp/dp/B0B8CF6VKK"
+        link: "https://www.amazon.co.jp/dp/B0B8CF6VKK",
+        year: 2022
+      },
+      {
+        tag: "論文",
+        title: "ゲーミフィケーションによる児童の情報モラル・リテラシー教育支援の提案",
+        desc: "ゲーム学会「ゲームと健康科学」研究部会 / 下條公寛, 村瀬真琴, 後藤田中",
+        link: "https://www.eng.kagawa-u.ac.jp/~hayashi/gas/GAS_Research_Report_2025.pdf",
+        year: 2025
+      }, {
+        tag: "活動",
+        title: "香川大学サイバー防犯ボランティアSETOKUとキノコラリー",
+        desc: "「みらいワクワク！子供仕事体験フェスタin高松」でインターネットセキュリティ教室を開催",
+        link: "https://www.kagawa-u.ac.jp/setoku17/",
+        year: 2025
+      },
+
+      {
+        tag: "論文",
+        title: "ロールプレイ型イベントにおける設問設計を支援する プラットフォームの開発と評価",
+        desc: "一般社団法人 教育システム情報学会 四国地区",
+        link: "https://www.jsise.org/wp-content/uploads/2026/02/2025_shikoku_a10_h.pdf",
+        year: 2026
+      },
+      {
+        tag: "活動",
+        title: "キノコラリーを活用したPBLで心理学部4年生のみなさん",
+        desc: "第14回「実学の帝塚山大学」実践学生発表祭の様子",
+        link: "https://www.tezukayama-u.ac.jp/faculty/psychology_welfare/news/2026/144/",
+        year: 2026
       }
     ]
   },
