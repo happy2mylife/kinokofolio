@@ -149,6 +149,13 @@ export const mediaData: MediaCategory[] = [
 
       },
       {
+        tag: "表彰",
+        title: "「ぼうさい甲子園 特別支援学校・団体の部」大賞を受賞",
+        desc: "「かわせみ防災クエスト」～冒険しながら防災を学ぼう！～",
+        link: "https://bousai-koushien.net/jusyoukou/archives/1392",
+        year: 2021
+      },
+      {
         tag: "CiNii",
         title: "バーチャル空間を利用した他地域遠隔交流による学習活動実践報告",
         desc: "教育版マインクラフトマルチプレイによる発達障害のある不登校児童支援",
@@ -158,9 +165,44 @@ export const mediaData: MediaCategory[] = [
       {
         tag: "書籍",
         title: "ＬＤ，ＡＤＨＤ＆ＡＳＤ 2022年 10月号 (ＧＩＧＡスクール　多様性に応じた個別最適な学び)",
-        desc: "寄稿「大人の一歩を子どもたちの百歩に」",
+        desc: "寄稿：「大人の一歩を子どもたちの百歩に」",
         link: "https://www.amazon.co.jp/dp/B0B8CF6VKK",
         year: 2022
+      },
+      {
+        tag: "表彰",
+        title: "青少年健全育成地区委員会等推進モデル事例",
+        desc: "～夏休み企画～親子で楽しもう！えばごリアルクエスト",
+        link: "https://www.seikatubunka.metro.tokyo.lg.jp/documents/d/seikatubunka/r4models",
+        year: 2022
+      },
+      {
+        tag: "書籍",
+        title: "掲載：実践みんなの特別支援教育 2022年2月号にも掲載！",
+        desc: "掲載：防災xキノコラリー かわせみ防災クエストの記事",
+        link: "https://www.seikatubunka.metro.tokyo.lg.jp/documents/d/seikatubunka/r4models",
+        year: 2022
+      },
+      {
+        tag: "メディア",
+        title: "タウンニュース今井南町自治会",
+        desc: "掲載：防災クイズで意識向上",
+        link: "https://www.townnews.co.jp/0204/2022/12/16/655754.html",
+        year: 2022
+      },
+      {
+        tag: "新聞",
+        title: "2023/3/8の読売新聞朝刊",
+        desc: "掲載：防災xキノコラリー かわせみ防災クエストの記事",
+        link: "https://bousai-koushien.net/jusyoukou/archives/1885",
+        year: 2023
+      },
+      {
+        tag: "表彰",
+        title: "「ぼうさい甲子園」優秀賞を受賞",
+        desc: "かわせみ防災クエスト2022",
+        link: "https://bousai-koushien.net/jusyoukou/archives/1885",
+        year: 2023
       },
       {
         tag: "論文",
@@ -189,71 +231,95 @@ export const mediaData: MediaCategory[] = [
         desc: "第14回「実学の帝塚山大学」実践学生発表祭の様子",
         link: "https://www.tezukayama-u.ac.jp/faculty/psychology_welfare/news/2026/144/",
         year: 2026
+      },
+      {
+        tag: "ポスター",
+        title: "特別支援教育における共創型冒険学習デジタルスタンプラリーの構築",
+        desc: "日本シミュレーション＆ゲーミング学会2026年度春期全国大会",
+        link: "https://note.com/mashandroom/n/n2ecdef51639d",
+        year: 2026
       }
     ]
   },
   {
-    category: "Media & Talks",
+    category: "Media, Talks & Lectures",
     icon: <Mic size={24} className="text-pink-500" />,
     items: [
       {
         tag: "Radio",
-        title: "東京FM「サステナ*デイズ」",
-        desc: "ロールプレーイングゲームを使った防災教育「かわせみ防災クエスト」",
-        link: "https://www.tfm.co.jp/solution/index.php?catid=4030&itemid=186468"
-      },
-      {
-        tag: "Radio",
         title: "FMしながわ",
         desc: "マッシュ＆ルームの活動紹介 / 品川区広報情報番組 ほっとラジオしながわ",
-        link: "https://mashandroom.org/report/2569"
-      },
-      {
-        tag: "Event",
-        title: "プログラミング教育セミナーONLINE",
-        desc: "民間と現場に学ぶ、プログラミング教育のカリキュラム・マネジメントと授業づくり",
-        link: "https://www.sobal.co.jp/about/newsrelease/news_20201211.html"
-      },
-      {
-        tag: "Event",
-        title: "2025年度第7回S.E.N.S年次大会 in 長野",
-        desc: "講座8 ICT活用「支援学級での活用体験」講師",
-      },
-      {
-        tag: "YouTube",
-        title: "Infra Study 2nd #8「エンジニアのアウトプット」",
-        desc: "ハッカソンに参加してたらキノコになっちゃった",
-        link: "https://www.youtube.com/live/EHb7bY1h7wM?t=6309s"
-      },
-      {
-        tag: "YouTube",
-        title: "ChatGPT Meetup Tokyo #3",
-        desc: "かまいたちの夜っぽいのを作ってみたら何かそれっぽくなった",
-        link: "https://www.youtube.com/live/-BbF_H-mDWg?si=-jxx66lRbUMaE1IT&t=4338"
-      },
-      {
-        tag: "YouTube",
-        title: "LINE Developer Community",
-        desc: "たった30分でできる！サンタから毎日メッセージが届くLINE Botを作るチャレンジ",
-        link: "https://www.youtube.com/live/rz5lw8pAGDI"
-      },
-      {
-        tag: "YouTube",
-        title: "【大阪・関西万国博覧会】ミライキッズラボ Day2",
-        desc: "2025年8月1日、大阪・関西万博にて開催された「ミライキッズラボ」に登壇。",
-        link: "https://www.youtube.com/live/w4PURqws7kM?si=flD5wNHetzQstY4-&t=10784"
+        link: "https://mashandroom.org/report/2569",
+        year: 2019
       },
       {
         tag: "Article",
         title: "ソフトバンクニュース「春休みPepperすごろくトライアル」",
         desc: "キノコ先生として出演。Pepperとmicro:bitを使ったプログラミングワークショップ。",
-        link: "https://www.softbank.jp/sbnews/entry/20190405_01"
+        link: "https://www.softbank.jp/sbnews/entry/20190405_01",
+        year: 2019
+      },
+      {
+        tag: "Event",
+        title: "プログラミング教育セミナーONLINE",
+        desc: "民間と現場に学ぶ、プログラミング教育のカリキュラム・マネジメントと授業づくり",
+        link: "https://www.sobal.co.jp/about/newsrelease/news_20201211.html",
+        year: 2020
+      },
+      {
+        tag: "YouTube",
+        title: "LINE Developer Community",
+        desc: "たった30分でできる！サンタから毎日メッセージが届くLINE Botを作るチャレンジ",
+        link: "https://www.youtube.com/live/rz5lw8pAGDI",
+        year: 2020
       },
       {
         tag: "YouTube",
         title: "KINOKO QUEST ライブ",
         desc: "キノコクエスト - 荏原第五お家で地域くえすと",
-        link: "https://www.youtube.com/live/WMGSqWOc2Mg"
+        link: "https://www.youtube.com/live/WMGSqWOc2Mg",
+        year: 2020
+      },
+      {
+        tag: "YouTube",
+        title: "Infra Study 2nd #8「エンジニアのアウトプット」",
+        desc: "ハッカソンに参加してたらキノコになっちゃった",
+        link: "https://www.youtube.com/live/EHb7bY1h7wM?t=6309s",
+        year: 2021
+      },
+      {
+        tag: "Radio",
+        title: "東京FM「サステナ*デイズ」",
+        desc: "ロールプレーイングゲームを使った防災教育「かわせみ防災クエスト」",
+        link: "https://www.tfm.co.jp/solution/index.php?catid=4030&itemid=186468",
+        year: 2022
+      },
+      {
+        tag: "YouTube",
+        title: "ChatGPT Meetup Tokyo #3",
+        desc: "かまいたちの夜っぽいのを作ってみたら何かそれっぽくなった",
+        link: "https://www.youtube.com/live/-BbF_H-mDWg?si=-jxx66lRbUMaE1IT&t=4338",
+        year: 2023
+      },
+      {
+        tag: "Event",
+        title: "2025年度第7回S.E.N.S年次大会 in 長野",
+        desc: "講座8 ICT活用「支援学級での活用体験」講師",
+        year: 2025
+      },
+      {
+        tag: "YouTube",
+        title: "【大阪・関西万国博覧会】ミライキッズラボ Day2",
+        desc: "2025年8月1日、大阪・関西万博にて開催された「ミライキッズラボ」に登壇。",
+        link: "https://www.youtube.com/live/w4PURqws7kM?si=flD5wNHetzQstY4-&t=10784",
+        year: 2025
+      },
+      {
+        tag: "Lecture",
+        title: "宮城学院女子大学「ビジネスレディネス」ゲスト講演",
+        desc: "「ビジネスと情報技術」をテーマに、現代ビジネス学部の学生に向けて講義を担当",
+        link: "https://note.com/mashandroom/n/n4664d4a1892e",
+        year: 2026
       }
     ]
   }
@@ -387,6 +453,13 @@ export const careerData: Record<string, CareerTab> = {
         title: "2023",
         details: [
           { text: "SPAJAM", link: "https://mashandroom.org/report/4235/" }
+        ]
+      },
+      {
+        title: "2026",
+        details: [
+          { text: "全日本AIハッカソン 2026 1stラウンド（東京会場）", link: "https://note.com/mashandroom/n/n3d40a56bfb09" },
+          { text: "ブラッカソン", link: "https://note.com/mashandroom/n/n2098acd77390" }
         ]
       }
     ]
