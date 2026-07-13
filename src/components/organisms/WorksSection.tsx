@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 import { Project } from '../../types';
 import SectionTitle from '../atoms/SectionTitle';
 import ProjectCard from '../molecules/ProjectCard';
@@ -55,6 +56,18 @@ const WorksSection: React.FC<WorksSectionProps> = ({ selectedWorks, kinokoConten
                   span={(index === 0 || index === 3) ? 2 : 1}
                 />
               ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <a
+                href="https://mashandroom.org/lp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-orange-500 font-bold text-lg hover:text-orange-600 transition-colors group"
+              >
+                他のコンテンツも見る
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </a>
             </div>
           </div>
         )}

@@ -533,6 +533,14 @@ export const qualifications: QualificationGroup[] = [
       { name: "スマート介護士Basic" },
       { name: "第2種衛生管理者" }
     ]
+  },
+  {
+    category: "Digital Badges",
+    icon: <Award size={24} className="text-purple-500" />,
+    items: [
+      { name: "Credly（AWS認定などのバッジ一覧）", link: "https://www.credly.com/users/h2m_kinoko" },
+      { name: "LecoS オープンバッジ（G検定などのバッジ一覧）", link: "https://www.openbadge-global.com/ns/portal/openbadge/public/assertions/user/eTZHWnpTL21RakloMjRmQnBtS3oxUT09" }
+    ]
   }
 ];
 
