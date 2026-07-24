@@ -237,6 +237,9 @@ export const mediaData: MediaCategory[] = [
         title: "特別支援教育における共創型冒険学習デジタルスタンプラリーの構築",
         desc: "日本シミュレーション＆ゲーミング学会2026年度春期全国大会",
         link: "https://note.com/mashandroom/n/n2ecdef51639d",
+        subLinks: [
+          { label: "発表ポスター (PDF)", href: "/JASAG2026poster.pdf" }
+        ],
         year: 2026
       }
     ]

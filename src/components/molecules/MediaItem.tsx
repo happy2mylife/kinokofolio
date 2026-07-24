@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, FileText } from 'lucide-react';
 import { MediaItemData } from '../../types';
 import Badge from '../atoms/Badge';
 
@@ -29,6 +29,21 @@ const MediaItem: React.FC<MediaItemProps> = ({ item }) => {
         )}
       </h4>
       <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+      {item.subLinks && (
+        <div className="mt-2 flex flex-wrap gap-2">
+          {item.subLinks.map((subLink) => (
+            <a
+              key={subLink.href}
+              href={subLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs font-medium text-orange-600 border border-orange-200 bg-orange-50 rounded-full px-3 py-1 hover:bg-orange-100 hover:border-orange-300 transition-colors"
+            >
+              <FileText size={12} /> {subLink.label}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
