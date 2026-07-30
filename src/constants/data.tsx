@@ -323,6 +323,13 @@ export const mediaData: MediaCategory[] = [
         desc: "「ビジネスと情報技術」をテーマに、現代ビジネス学部の学生に向けて講義を担当",
         link: "https://note.com/mashandroom/n/n4664d4a1892e",
         year: 2026
+      },
+      {
+        tag: "Event",
+        title: "第14回情報教育研究会 in 江戸川大学",
+        desc: "実践報告「AIよりなんかいい、ちょっといい。」として登壇（テーマ：学びのためのシミュレーション＆ゲーミング）",
+        link: "https://www.edogawa-u.ac.jp/facility/info_research/20260726.html",
+        year: 2026
       }
     ]
   }
