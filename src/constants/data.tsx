@@ -330,6 +330,13 @@ export const mediaData: MediaCategory[] = [
         desc: "実践報告「AIよりなんかいい、ちょっといい。」として登壇（テーマ：学びのためのシミュレーション＆ゲーミング）",
         link: "https://www.edogawa-u.ac.jp/facility/info_research/20260726.html",
         year: 2026
+      },
+      {
+        tag: "Lecture",
+        title: "第3回 香川大学 LINE API講座",
+        desc: "LINE API Expertとして講師を担当。Messaging APIを用いたボット開発などを高校生・大学生向けに講義",
+        link: "https://csc.kagawa-u.ac.jp/news/1821/",
+        year: 2026
       }
     ]
   }
