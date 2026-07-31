@@ -305,6 +305,13 @@ export const mediaData: MediaCategory[] = [
         year: 2023
       },
       {
+        tag: "Lecture",
+        title: "第1回 香川大学 LINE API講座「LINE APIでできる、学生向けのアプリ開発講座」",
+        desc: "LINE API Expertとして講師を担当。LINE APIを活用した教育アプリの開発方法を講義",
+        link: "https://csc.kagawa-u.ac.jp/news/643/",
+        year: 2025
+      },
+      {
         tag: "Event",
         title: "2025年度第7回S.E.N.S年次大会 in 長野",
         desc: "講座8 ICT活用「支援学級での活用体験」講師",
@@ -315,6 +322,13 @@ export const mediaData: MediaCategory[] = [
         title: "【大阪・関西万国博覧会】ミライキッズラボ Day2",
         desc: "2025年8月1日、大阪・関西万博にて開催された「ミライキッズラボ」に登壇。",
         link: "https://www.youtube.com/live/w4PURqws7kM?si=flD5wNHetzQstY4-&t=10784",
+        year: 2025
+      },
+      {
+        tag: "Lecture",
+        title: "第2回 香川大学 LINE API講座「LINE Bot + 生成AI」",
+        desc: "LINE API Expertとして講師を担当。LINE Botと生成AIを組み合わせたアプリ開発を講義",
+        link: "https://csc.kagawa-u.ac.jp/news/962/",
         year: 2025
       },
       {
