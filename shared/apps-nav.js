@@ -2,6 +2,7 @@
  * kinokoapps 共通「ほかのアプリ」カード
  * 使い方(各LP):
  *   <div id="kinoko-apps-nav" data-app="synqlo"></div>
+ *   色は既定で明るい。ダークモード対応の LP は data-theme="auto"(端末に合わせる)か "dark"(いつも暗い)を付ける
  *   <script src="https://kinokoapps.site/shared/apps-nav.js" defer></script>
  * data-app のアプリは一覧から除く。JS が動かなくても LP 側の文字リンクで困らない。
  */
@@ -40,18 +41,23 @@
     return safeUrl(app.lp);
   }
 
+  var DARK = '--kan-ink:#f1eefc;--kan-muted:#b9b3d1;--kan-card:#2b2456;--kan-line:rgba(255,255,255,.14)';
+
   function injectStyle() {
     if (document.getElementById('kan-style')) return;
     var css =
+      // 既定は明るい色だけ。端末がダークモードでも、LP が明るいままなら文字が読めなくならないようにする。
+      // ダークモード対応の LP だけ data-theme で選ぶ: light(既定)・dark(いつも暗い)・auto(端末の設定に合わせる)
       '#' + ROOT_ID + '{--kan-ink:#2a2340;--kan-muted:#6b6485;--kan-card:#fff;--kan-line:rgba(0,0,0,.1);--kan-accent:#e2533c;' +
       'max-width:960px;margin:32px auto;padding:0 16px;font-family:inherit;color:var(--kan-ink);box-sizing:border-box}' +
-      '@media(prefers-color-scheme:dark){#' + ROOT_ID + '{--kan-ink:#f1eefc;--kan-muted:#b9b3d1;--kan-card:#2b2456;--kan-line:rgba(255,255,255,.14)}}' +
+      '#' + ROOT_ID + '[data-theme="dark"]{' + DARK + '}' +
+      '@media(prefers-color-scheme:dark){#' + ROOT_ID + '[data-theme="auto"]{' + DARK + '}}' +
       '#' + ROOT_ID + ' *{box-sizing:border-box}' +
       '#' + ROOT_ID + ' .kan-title{font-size:20px;font-weight:700;margin:0 0 4px}' +
       '#' + ROOT_ID + ' .kan-sub{font-size:14px;color:var(--kan-muted);margin:0 0 14px}' +
       '#' + ROOT_ID + ' .kan-row{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}' +
       '#' + ROOT_ID + ' .kan-card{flex:0 0 220px;scroll-snap-align:start;display:flex;flex-direction:column;gap:10px;padding:14px;' +
-      'background:var(--kan-card);border:1px solid var(--kan-line);border-radius:16px;color:inherit;text-decoration:none}' +
+      'background:var(--kan-card);border:1px solid var(--kan-line);border-radius:16px;color:var(--kan-ink);text-decoration:none}' +
       '#' + ROOT_ID + ' .kan-card:hover,#' + ROOT_ID + ' .kan-card:focus-visible{border-color:var(--kan-accent);outline:none}' +
       '#' + ROOT_ID + ' .kan-icon{width:56px;height:56px;border-radius:14px;display:block;background:var(--kan-line)}' +
       '#' + ROOT_ID + ' .kan-name{font-size:16px;font-weight:700;line-height:1.3}' +
@@ -73,8 +79,11 @@
   function render(root, apps) {
     var self = root.getAttribute('data-app') || '';
     var os = platform();
+    // 旧 id(aliases)で呼ばれても自分を除けるようにする
     var list = apps.filter(function (a) {
-      return a && a.id !== self && safeUrl(a.lp);
+      if (!a || !safeUrl(a.lp)) return false;
+      if (a.id === self) return false;
+      return !(Array.isArray(a.aliases) && a.aliases.indexOf(self) >= 0);
     });
     if (!list.length) return;
 

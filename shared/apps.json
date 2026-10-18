@@ -4,7 +4,7 @@
     "name": "SYNQLO",
     "tagline": "カップル・友達・夫婦の価値観ゲーム",
     "icon": "https://kinokoapps.site/shared/icons/synqlo.png",
-    "lp": "https://synqlo.kinokoapps.site",
+    "lp": "https://synqlo.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6757748215",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.unkinoko.choice.the.two"
   },
@@ -13,7 +13,7 @@
     "name": "謎解きUNKINOKO",
     "tagline": "通勤・通学に遊べるカジュアル脱出ゲーム",
     "icon": "https://kinokoapps.site/shared/icons/unkinoko.png",
-    "lp": "https://unkinoko-escape.kinokoapps.site",
+    "lp": "https://unkinoko-escape.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6553963575",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.unkinoko"
   },
@@ -22,7 +22,7 @@
     "name": "こむぎのパン日記",
     "tagline": "時間制限なし。パンを育てて売るお店ゲーム",
     "icon": "https://kinokoapps.site/shared/icons/fukkura.png",
-    "lp": "https://komugipan.kinokoapps.site",
+    "lp": "https://komugipan.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6819544546",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.fukkura"
   },
@@ -31,16 +31,17 @@
     "name": "TWINS DECO",
     "tagline": "1台のスマホを2人で挟んで遊ぶ",
     "icon": "https://kinokoapps.site/shared/icons/twinsdeco.png",
-    "lp": "https://twins-deco.kinokoapps.site",
+    "lp": "https://twins-deco.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6816004373",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.kinoko.twinsdeco"
   },
   {
     "id": "fingerathlon",
+    "aliases": ["fingerinpic"],
     "name": "ゆびさき大運動会",
     "tagline": "1台で最大4人。指だけミニ競技パーティー",
     "icon": "https://kinokoapps.site/shared/icons/fingerathlon.png",
-    "lp": "https://fingerathlon.kinokoapps.site",
+    "lp": "https://fingerathlon.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6818140789",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.fingerinpic"
   },
@@ -49,7 +50,7 @@
     "name": "コロガコン!",
     "tagline": "スワイプで全部転がす爽快ロジックパズル",
     "icon": "https://kinokoapps.site/shared/icons/korogakon.png",
-    "lp": "https://korogakon.kinokoapps.site",
+    "lp": "https://korogakon.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6816906837",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.korogakon"
   },
@@ -58,7 +59,7 @@
     "name": "ナンプレ かずつみ",
     "tagline": "大きな数字で見やすい。はじめてでも安心",
     "icon": "https://kinokoapps.site/shared/icons/kazutsumi.png",
-    "lp": "https://kazutsumi.kinokoapps.site",
+    "lp": "https://kazutsumi.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6819139711",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.kazutsumi"
   }
