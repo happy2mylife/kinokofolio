@@ -5,12 +5,96 @@
  *   色は既定で明るい。ダークモード対応の LP は data-theme="auto"(端末に合わせる)か "dark"(いつも暗い)を付ける
  *   <script src="https://kinokoapps.site/shared/apps-nav.js" defer></script>
  * data-app のアプリは一覧から除く。JS が動かなくても LP 側の文字リンクで困らない。
+ *
+ * このファイルは Google アナリティクス(GA4)のタグも読み込む(全 LP 共通・測定 ID は下の GA_ID)。
+ *   store_click … ストア(apps.apple.com / play.google.com)へのリンクを押した。store=app_store|google_play、
+ *                 app=サブドメイン(korogakon など)、placement=page(ページ内)|apps_nav(「ほかのアプリ」カード。app は行き先)
+ *   try_play    … 「ちょっと遊んでみる」の画面を、1ページ表示のうち最初に触った。app=サブドメイン、game=data-kt-try の値
+ * Firebase は使わない。Cookie は kinokoapps.site 全体で共有(*.web.app では各サイトごと)。
  */
 (function () {
   'use strict';
 
   var ROOT_ID = 'kinoko-apps-nav';
+  var GA_ID = 'G-EJ3GHR7TTF';
   var BASE = 'https://kinokoapps.site/shared/';
+
+
+  // ---- アクセス解析(GA4) ----
+  // サブドメイン(korogakon.kinokoapps.site → korogakon)。トップは top。
+  function appOf(host) {
+    host = String(host || '').toLowerCase();
+    if (host === 'kinokoapps.site' || host === 'www.kinokoapps.site') return 'top';
+    return host.split('.')[0] || 'unknown';
+  }
+
+  function initAnalytics() {
+    if (window.__kanGa) return;
+    window.__kanGa = true;
+    var host = location.hostname;
+    window.dataLayer = window.dataLayer || [];
+    var gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag = gtag;
+    gtag('js', new Date());
+    // kinokoapps.site の中はサブドメインをまたいで同じ訪問者として数える(Cookie は .kinokoapps.site)
+    gtag('config', GA_ID, { cookie_domain: /(^|\.)kinokoapps\.site$/.test(host) ? 'kinokoapps.site' : 'auto' });
+    var g = document.createElement('script');
+    g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(g);
+
+    function onLink(e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if (!a) return;
+      var u;
+      try { u = new URL(a.href, location.href); } catch (err) { return; }
+      var store = u.hostname === 'apps.apple.com' ? 'app_store' : u.hostname === 'play.google.com' ? 'google_play' : '';
+      if (!store) return;
+      var inNav = !!(a.closest && a.closest('#' + ROOT_ID));
+      gtag('event', 'store_click', {
+        store: store,
+        app: (inNav && a.getAttribute('data-app')) || appOf(host),
+        placement: inNav ? 'apps_nav' : 'page',
+        transport_type: 'beacon'
+      });
+    }
+    document.addEventListener('click', onLink, true);
+    document.addEventListener('auxclick', onLink, true);
+
+    var tried = false;
+    document.addEventListener('pointerdown', function (e) {
+      if (tried) return;
+      var t = e.target;
+      var screen = t && t.closest ? t.closest('[data-kt-try] [data-kt-screen]') : null;
+      if (!screen) return;
+      tried = true;
+      var sec = screen.closest('[data-kt-try]');
+      gtag('event', 'try_play', { app: appOf(host), game: (sec && sec.getAttribute('data-kt-try')) || '' });
+    }, true);
+  }
+
+  // ページの下に出す案内(ページにプライバシーポリシーへのリンクがあれば、そこへもつなぐ)
+  function addNotice() {
+    if (document.getElementById('kan-ga-notice')) return;
+    var p = document.createElement('p');
+    p.id = 'kan-ga-notice';
+    p.style.cssText = 'max-width:960px;margin:8px auto 24px;padding:0 16px;font-size:12px;line-height:1.6;text-align:center;opacity:.7;color:inherit;font-family:inherit;box-sizing:border-box';
+    p.textContent = 'このサイトでは、利用状況の把握のため Google アナリティクスを使っています。';
+    var priv = document.querySelector('a[href*="privacy"]');
+    if (priv && priv.href) {
+      var a = document.createElement('a');
+      a.href = priv.href;
+      a.textContent = 'プライバシーポリシー';
+      a.style.cssText = 'color:inherit;text-decoration:underline';
+      p.appendChild(document.createTextNode(' '));
+      p.appendChild(a);
+    }
+    var root = document.getElementById(ROOT_ID);
+    if (root && root.parentNode) root.parentNode.insertBefore(p, root.nextSibling);
+    else if (document.body) document.body.appendChild(p);
+  }
+
+  initAnalytics();
 
   var script = document.currentScript;
   var jsonUrl = BASE + 'apps.json';
@@ -102,6 +186,7 @@
       var card = el('a', 'kan-card');
       card.href = href;
       card.rel = 'noopener';
+      try { card.setAttribute('data-app', appOf(new URL(a.lp).hostname)); } catch (e) {}
 
       var icon = el('img', 'kan-icon');
       icon.alt = '';
@@ -122,6 +207,7 @@
   }
 
   function start() {
+    addNotice();
     var root = document.getElementById(ROOT_ID);
     if (!root || !window.fetch) return;
     fetch(jsonUrl, { credentials: 'omit' })
