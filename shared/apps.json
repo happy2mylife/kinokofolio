@@ -62,5 +62,13 @@
     "lp": "https://kazutsumi.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6819139711",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.kazutsumi"
+  },
+  {
+    "id": "hontonoseren",
+    "name": "ホントのセレン",
+    "tagline": "毎日5冊、表紙とあらすじで本を選ぶ",
+    "icon": "https://kinokoapps.site/shared/icons/hontonoseren.png",
+    "lp": "https://hontonoseren.kinokoapps.site/lp",
+    "ios": "https://apps.apple.com/jp/app/id6827093611"
   }
 ]
