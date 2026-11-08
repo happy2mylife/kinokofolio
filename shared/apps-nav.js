@@ -120,7 +120,10 @@
 
   function hrefFor(app, from, os) {
     var tag = 'lp_' + encodeURIComponent(from || 'unknown');
-    if (os === 'ios' && safeUrl(app.ios)) return withParam(safeUrl(app.ios), 'ct', tag);
+    // App Store Connect のキャンペーン計測: pt(提供元トークン)と ct の両方がないと集計されない。
+    // ct は小文字の英数字と _ で40文字まで。
+    var ct = tag.toLowerCase().replace(/[^a-z0-9_]/g, '_').slice(0, 40);
+    if (os === 'ios' && safeUrl(app.ios)) return withParam(withParam(withParam(safeUrl(app.ios), 'pt', '118228018'), 'ct', ct), 'mt', '8');
     if (os === 'android' && safeUrl(app.play)) return withParam(safeUrl(app.play), 'referrer', 'utm_source%3D' + tag);
     return safeUrl(app.lp);
   }
