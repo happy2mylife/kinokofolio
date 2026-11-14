@@ -70,5 +70,22 @@
     "icon": "https://kinokoapps.site/shared/icons/hontonoseren.png",
     "lp": "https://hontonoseren.kinokoapps.site/lp",
     "ios": "https://apps.apple.com/jp/app/id6827093611"
+  },
+  {
+    "id": "udon-ojisan",
+    "name": "おやかたのうどん道",
+    "tagline": "うどん屋の一生を、フリックで仕分けるゲーム",
+    "icon": "https://kinokoapps.site/shared/icons/udon-ojisan.png",
+    "lp": "https://oyakata-udondo.kinokoapps.site/",
+    "ios": "https://apps.apple.com/jp/app/id6824787810",
+    "play": "https://play.google.com/store/apps/details?id=org.mashandroom.udon_ojisan"
+  },
+  {
+    "id": "oyakata-sushi",
+    "name": "おやかたのすし道",
+    "tagline": "すし屋の一生を、フリックで仕分けるゲーム",
+    "icon": "https://kinokoapps.site/shared/icons/oyakata-sushi.png",
+    "lp": "https://oyakata-sushi.kinokoapps.site/",
+    "ios": "https://apps.apple.com/jp/app/id6833365040"
   }
 ]
