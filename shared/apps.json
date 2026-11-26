@@ -37,7 +37,9 @@
   },
   {
     "id": "fingerathlon",
-    "aliases": ["fingerinpic"],
+    "aliases": [
+      "fingerinpic"
+    ],
     "name": "ゆびさき大運動会",
     "tagline": "1台で最大4人。指だけミニ競技パーティー",
     "icon": "https://kinokoapps.site/shared/icons/fingerathlon.png",
@@ -89,5 +91,14 @@
     "lp": "https://oyakata-sushi.kinokoapps.site/",
     "ios": "https://apps.apple.com/jp/app/id6833365040",
     "play": "https://play.google.com/store/apps/details?id=org.mashandroom.oyakata_sushi"
+  },
+  {
+    "id": "korodice",
+    "name": "コロダイス",
+    "tagline": "サイコロを転がして上の目を合わせるパズル",
+    "icon": "https://kinokoapps.site/shared/icons/korodice.png",
+    "lp": "https://korodice.kinokoapps.site/",
+    "ios": "https://apps.apple.com/jp/app/id6837518605",
+    "play": "https://play.google.com/store/apps/details?id=org.mashandroom.korodice"
   }
 ]
